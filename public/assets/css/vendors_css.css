@@ -1,7 +1,7 @@
 /****************************/
 /** Imports Plugin css **/
 /****************************/
-@import url(../../assets/vendor_components/bootstrap-master/dist/css/bootstrap.css);
+@import url(../../assets/vendor_components/bs-theme/bs.css);
 
 @import url(../../assets/vendor_components/perfect-scrollbar/css/perfect-scrollbar.css);
 @import url(../../assets/vendor_components/morris.js/morris.css);
