@@ -31,7 +31,7 @@ app.baseURL = 'http://localhost:8081/'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
-database.default.database = new_workflow
+database.default.database = ci4workflow
 database.default.username = root
 database.default.password = 
 database.default.DBDriver = MySQLi
