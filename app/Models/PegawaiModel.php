@@ -11,7 +11,7 @@ class PegawaiModel extends Model
 	protected $primaryKey = 'id_pegawai';
 	protected $returnType = 'object';
 	protected $useSoftDeletes = false;
-	protected $allowedFields = ['pegawai_name', 'address', 'contact_person', 'email', 'phone_number', 'username', 'password', 'id_role'];
+	protected $allowedFields = ['pegawai_name', 'address', 'contact_person', 'email', 'phone_number', 'username', 'password', 'id_role', 'reset_token', 'reset_at'];
 	protected $useTimestamps = false;
 	protected $createdField  = 'created_at';
 	protected $updatedField  = 'updated_at';

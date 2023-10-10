@@ -20,7 +20,7 @@ CI_ENVIRONMENT = development
 # APP
 #--------------------------------------------------------------------
 
-app.baseURL = 'http://localhost:8081/'
+app.baseURL = 'http://localhost:8080/'
 # If you have trouble with `.`, you could also use `_`.
 # app_baseURL = ''
 # app.forceGlobalSecureRequests = false
@@ -31,7 +31,7 @@ app.baseURL = 'http://localhost:8081/'
 #--------------------------------------------------------------------
 
 database.default.hostname = localhost
-database.default.database = ci4workflow
+database.default.database = new_workflow
 database.default.username = root
 database.default.password = 
 database.default.DBDriver = MySQLi
@@ -89,7 +89,7 @@ database.default.port = 3306
 # ENCRYPTION
 #--------------------------------------------------------------------
 
-# encryption.key =
+encryption.key = hex2bin:3b911a009843635f174c0ca87ea653c7d26af05314cb042c3f51a5339059f519
 # encryption.driver = OpenSSL
 # encryption.blockSize = 16
 # encryption.digest = SHA512

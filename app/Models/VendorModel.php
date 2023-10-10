@@ -8,7 +8,7 @@ class VendorModel extends Model {
 	protected $primaryKey = 'id_vendor';
 	protected $returnType = 'object';
 	protected $useSoftDeletes = false;
-	protected $allowedFields = ['vendor_name', 'address', 'contact_person', 'email', 'phone_number', 'username', 'password', 'id_role'];
+	protected $allowedFields = ['vendor_name', 'address', 'contact_person', 'email', 'phone_number', 'username', 'password', 'id_role', 'reset_token', 'reset_at'];
 	protected $useTimestamps = false;
 	protected $createdField  = 'created_at';
 	protected $updatedField  = 'updated_at';

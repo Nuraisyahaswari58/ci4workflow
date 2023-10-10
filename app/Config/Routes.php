@@ -31,7 +31,13 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 $routes->get('logout', 'Login::logout');
-$routes->post('login/(:any)', 'Login::ceklogin');
+$routes->post('login/Admin', 'Login::ceklogin');
+$routes->post('login/Vendor', 'Login::ceklogin');
+$routes->post('login/Pegawai', 'Login::ceklogin');
+$routes->get('login/Admin/resetPassword', 'Login::resetPassword');
+$routes->get('login/Vendor/resetPassword', 'Login::resetPassword');
+$routes->get('login/Pegawai/resetPassword', 'Login::resetPassword');
+$routes->get('login/Admin/lupapassword', 'Login::lupaPassword');
 $routes->match(['get', 'post'], 'Project/sendMail', 'Project::sendMail');
 
 /*
