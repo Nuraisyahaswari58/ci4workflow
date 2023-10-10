@@ -38,6 +38,8 @@ $routes->get('login/Admin/resetPassword', 'Login::resetPassword');
 $routes->get('login/Vendor/resetPassword', 'Login::resetPassword');
 $routes->get('login/Pegawai/resetPassword', 'Login::resetPassword');
 $routes->get('login/Admin/lupapassword', 'Login::lupaPassword');
+$routes->get('login/Vendor/lupapassword', 'Login::lupaPassword');
+$routes->get('login/Pegawai/lupapassword', 'Login::lupaPassword');
 $routes->match(['get', 'post'], 'Project/sendMail', 'Project::sendMail');
 
 /*
