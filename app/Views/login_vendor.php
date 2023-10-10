@@ -29,7 +29,7 @@
         <!-- /.col -->
         <div class="col-6">
             <div class="fog-pwd text-end">
-                <a href="javascript:void(0)" class="hover-warning"><i class="fad fa-lock"></i> Lupa password?</a><br>
+                <a href="<?= base_url(); ?>/login/Vendor/lupapassword" class="hover-warning"><i class="fad fa-lock"></i> Lupa password?</a><br>
             </div>
         </div>
         <!-- /.col -->
