@@ -10,6 +10,6 @@ class AdminModel extends Model
     protected $skipValidation = true;
     protected $table            = 'admin';
     protected $primaryKey       = 'id_admin';
-    protected $allowedFields    = ['username','email','password'];
+    protected $allowedFields    = ['username','email','password', 'reset_token', 'reset_at'];
 
 }
