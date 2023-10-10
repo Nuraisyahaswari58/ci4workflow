@@ -88,8 +88,8 @@ class Dashboard extends BaseController
                 $value->vendor_name,
                 $value->role_name,
                 $deadline,
-                $value->link_project,
-                $value->link_pengumpulan,
+                '<a href="' . $value->link_project . '" target="_blank">' . $value->link_project . '</a>',
+                '<a href="' . $value->link_pengumpulan . '" target="_blank">' . $value->link_pengumpulan . '</a>',
                 $value->status == 0 ? '<button class="btn btn-primary btn-sm"><i class="fas fa-sync"></i></button>' : '<button class="btn btn-success btn-sm"><i class="fas fa-check"></i></button>',
             );
             $no++;
