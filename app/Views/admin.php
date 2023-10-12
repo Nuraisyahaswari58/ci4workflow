@@ -1,11 +1,12 @@
 <?= $this->extend("layouts/master_app") ?>
 
 <?= $this->section("content") ?>
+<!-- Main content -->
 
 <section class="content">
   <div class="box">
     <div class="box-header with-border">
-      <h4 class="box-title text-capitalize">Data <?= $title ?></h4>
+      <h4 class="box-title text-capitalize">Data admin</h4>
       <button type="button" class="btn float-end btn-primary btn-sm" onclick="save()" title="<?= lang("App.new") ?>"> <?= lang('App.new') ?></button>
     </div>
     <div class="box-body">
@@ -23,7 +24,6 @@
   </div>
 </section>
 
-
 <!-- /Main content -->
 
 <!-- ADD modal content -->
@@ -35,31 +35,27 @@
       </div>
       <div class="modal-body">
         <form id="data-form" class="pl-3 pr-3">
+          <?= csrf_field() ?>
           <div class="row">
-            <input type="hidden" id="id_admin" name="id_admin" class="form-control" placeholder="Id admin" required>
+            <input type="hidden" id="id_admin" name="id_admin" class="form-control" placeholder="Id admin" maxlength="11" required>
           </div>
           <div class="row">
             <div class="col-md-12">
               <div class="form-group mb-3">
                 <label for="username" class="col-form-label"> Username: <span class="text-danger">*</span> </label>
-                <input type="text" id="username" name="username" class="form-control" placeholder="Username" minlength="3" required>
+                <input type="text" id="username" name="username" class="form-control" placeholder="Username" minlength="0" maxlength="200" required>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group mb-3">
                 <label for="email" class="col-form-label"> Email: <span class="text-danger">*</span> </label>
-                <input type="email" id="email" name="email" class="form-control" placeholder="Email" minlength="0" maxlength="25" required>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Email" minlength="0" maxlength="200" required>
               </div>
             </div>
             <div class="col-md-12">
               <div class="form-group mb-3">
                 <label for="password" class="col-form-label"> Password: <span class="text-danger">*</span> </label>
-                <input type="password" id="password" name="password" class="form-control" placeholder="Password" minlength="0" maxlength="25" required>
-              </div>
-            </div>
-            <div class="col-md-12">
-              <div class="form-group mb-3">
-                <input type="hidden" id="level" name="level" class="form-control" value="0" placeholder="Level" minlength="0" maxlength="1" required>
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password" minlength="0" maxlength="200" required>
               </div>
             </div>
           </div>
@@ -78,14 +74,12 @@
 <!-- /ADD modal content -->
 
 
-
 <?= $this->endSection() ?>
-<!-- /.content -->
-
-
 <!-- page script -->
 <?= $this->section("script") ?>
 <script>
+  let csrfHash = '<?= csrf_hash(); ?>'
+  let csrfToken = '<?= csrf_token(); ?>'
   // dataTables
   $(function() {
     var table = $('#data_table').removeAttr('width').DataTable({
@@ -126,7 +120,6 @@
     if (typeof id_admin === 'undefined' || id_admin < 1) { //add
       urlController = '<?= base_url($controller . "/add") ?>';
       submitText = '<?= lang("App.save") ?>';
-      $('#model-header').removeClass('bg-info').addClass('bg-success');
       $("#info-header-modalLabel").text('<?= lang("App.add") ?>');
       $("#form-btn").text(submitText);
       $('#data-modal').modal('show');
@@ -134,14 +127,14 @@
       urlController = '<?= base_url($controller . "/edit") ?>';
       submitText = '<?= lang("App.update") ?>';
       $.ajax({
-        url: '<?php echo base_url($controller . "/getOne") ?>',
+        url: '<?= base_url($controller . "/getOne") ?>',
         type: 'post',
         data: {
-          id_admin: id_admin
+          id_admin: id_admin,
+          [csrfToken]: csrfHash
         },
         dataType: 'json',
         success: function(response) {
-          $('#model-header').removeClass('bg-success').addClass('bg-info');
           $("#info-header-modalLabel").text('<?= lang("App.edit") ?>');
           $("#form-btn").text(submitText);
           $('#data-modal').modal('show');
@@ -150,7 +143,9 @@
           $("#data-form #username").val(response.username);
           $("#data-form #email").val(response.email);
           $("#data-form #password").val(response.password);
-          $("#data-form #level").val(response.level);
+          $("#data-form #reset_token").val(response.reset_token);
+          $("#data-form #reset_at").val(response.reset_at);
+
 
         }
       });
@@ -194,16 +189,16 @@
           },
           success: function(response) {
             if (response.success === true) {
+              $('#data-modal').modal('hide');
               Swal.fire({
                 toast: true,
-                position: 'top-end',
+                position: 'bottom-end',
                 icon: 'success',
                 title: response.messages,
                 showConfirmButton: false,
                 timer: 1500
               }).then(function() {
                 $('#data_table').DataTable().ajax.reload(null, false).draw(false);
-                $('#data-modal').modal('hide');
               })
             } else {
               if (response.messages instanceof Object) {
@@ -229,6 +224,8 @@
             }
             $('#form-btn').html(getSubmitText());
           }
+        }).fail(function(res) {
+          console.log(res);
         });
         return false;
       }
@@ -241,14 +238,18 @@
     });
   }
 
-
-
   function remove(id_admin) {
     Swal.fire({
       title: "<?= lang("App.remove-title") ?>",
       text: "<?= lang("App.remove-text") ?>",
       icon: 'warning',
       showCancelButton: true,
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      },
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: '<?= lang("App.confirm") ?>',
@@ -260,15 +261,15 @@
           url: '<?php echo base_url($controller . "/remove") ?>',
           type: 'post',
           data: {
-            id_admin: id_admin
+            id_admin: id_admin,
+            [csrfToken]: csrfHash
           },
           dataType: 'json',
           success: function(response) {
-
             if (response.success === true) {
               Swal.fire({
                 toast: true,
-                position: 'top-end',
+                position: 'bottom-end',
                 icon: 'success',
                 title: response.messages,
                 showConfirmButton: false,
