@@ -40,7 +40,7 @@
 								<?php } else if($uri->getSegment(3) === "resetPassword") { ?>
 									<p class="mb-0">Silahkan reset kata sandi.</p>
 								<?php } else { ?>
-									<p class="mb-0">Masuk untuk melanjutkan ke aplikasi.</p>
+									<p class="mb-0">Masukkan Email/Username untuk Melanjutkan Login.</p>
 
 								<?php } ?>
 							</div>
@@ -49,8 +49,7 @@
 								<?php if ($uri->getSegment(3) === "lupapassword") { ?>
 								<?php } else if($uri->getSegment(3) === "resetPassword") { ?>
 								<?php } else { ?>
-									<div class="text-center">
-									<p class="mt-15 mb-0">Tidak punya akun? <a href="auth_register.html" class="text-warning ms-5">Mendaftar</a></p>
+									
 								</div>
 								<?php } ?>
 
@@ -67,7 +66,18 @@
 	<script src="<?= base_url() ?>/assets/js/vendors.min.js"></script>
 	<script src="<?= base_url() ?>/assets/js/pages/chat-popup.js"></script>
 	<script src="<?= base_url() ?>/assets/icons/feather-icons/feather.min.js"></script>
+<script>
+    const passwordInput = document.querySelector('input[name="password"]');
+    const togglePasswordButton = document.getElementById('togglePassword');
 
+    togglePasswordButton.addEventListener('click', function () {
+        if (passwordInput.type === 'password') {
+            passwordInput.type = 'text';
+        } else {
+            passwordInput.type = 'password';
+        }
+    });
+</script>
 </body>
 
 </html>

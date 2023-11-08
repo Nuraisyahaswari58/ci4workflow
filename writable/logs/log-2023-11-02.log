@@ -1,0 +1,162 @@
+ERROR - 2023-11-02 00:00:11 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-02 00:00:11 --> 220 smtp.gmail.com ESMTP e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+to: 250 2.1.5 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+The following SMTP error was encountered: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+ERROR - 2023-11-02 00:00:16 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-02 00:00:16 --> 220 smtp.gmail.com ESMTP e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+to: 250 2.1.5 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+The following SMTP error was encountered: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-11-02 00:00:22 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-02 00:00:22 --> 220 smtp.gmail.com ESMTP e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+to: 250 2.1.5 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+The following SMTP error was encountered: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-11-02 00:00:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-02 00:00:27 --> 220 smtp.gmail.com ESMTP e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+to: 250 2.1.5 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+The following SMTP error was encountered: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-11-02 00:00:32 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-02 00:00:32 --> 220 smtp.gmail.com ESMTP e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+to: 250 2.1.5 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+The following SMTP error was encountered: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-11-02 00:00:37 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-11-02 00:00:37 --> 220 smtp.gmail.com ESMTP e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+to: 250 2.1.5 OK e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+The following SMTP error was encountered: 354  Go ahead e19-20020a170902f1d300b001bbb25dd3a7sm1550410plc.187 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 

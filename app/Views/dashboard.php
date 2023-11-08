@@ -105,6 +105,7 @@
 
     </section>
 <?php endif; ?>
+
 <?php if (session()->get('level') != 'Pegawai') : ?>
     <section class="content">
         <div class="box">
@@ -130,6 +131,7 @@
         </div>
     </section>
 <?php endif; ?>
+
 <?php if (session()->get('level') != 'Vendor') : ?>
     <section class="content">
         <div class="box">

@@ -12,285 +12,305 @@ use CodeIgniter\I18n\Time;
 
 class Project extends BaseController
 {
-    protected $projectModel;
-    protected $projectvendorModel;
-    protected $pegawaiModel;
-    protected $vendorModel;
-    protected $rvendorModel;
-    protected $validation;
+	protected $projectModel;
+	protected $projectvendorModel;
+	protected $pegawaiModel;
+	protected $vendorModel;
+	protected $rvendorModel;
+	protected $validation;
 
-    public function __construct()
-    {
-        $this->projectModel = new ProjectModel();
-        $this->vendorModel = new VendorModel();
-        $this->rvendorModel = new RolevendorModel();
-        $this->pegawaiModel = new PegawaiModel();
-        $this->validation =  \Config\Services::validation();
-    }
+	public function __construct()
+	{
+		$this->projectModel = new ProjectModel();
+		$this->vendorModel = new VendorModel();
+		$this->rvendorModel = new RolevendorModel();
+		$this->pegawaiModel = new PegawaiModel();
+		$this->validation =  \Config\Services::validation();
+	}
 
-    public function index()
-    {
+	public function index()
+	{
 
-        $data = [
-            'controller'        => ucwords('project'),
-            'title'             => ucwords('project'),
-            'v_a'                 => $this->vendorModel->where('id_role', 3)->findAll(),
-            'v_b'                 => $this->vendorModel->where('id_role', 4)->findAll(),
-            'v_c'                 => $this->vendorModel->where('id_role', 5)->findAll(),
-            'v_d'                 => $this->vendorModel->where('id_role', 6)->findAll(),
-            'p_b'                 => $this->pegawaiModel->where('id_role', 8)->findAll(),
-            'p_c'                 => $this->pegawaiModel->where('id_role', 9)->findAll(),
-            'r_v'                 => $this->rvendorModel->findAll(),
+		$data = [
+			'controller'    	=> ucwords('project'),
+			'title'     		=> ucwords('project'),
+			'v_a'     			=> $this->vendorModel->where('id_role', 3)->findAll(),
+			'v_b'     			=> $this->vendorModel->where('id_role', 4)->findAll(),
+			'v_c'     			=> $this->vendorModel->where('id_role', 5)->findAll(),
+			'v_d'     			=> $this->vendorModel->where('id_role', 6)->findAll(),
+			'p_b'     			=> $this->pegawaiModel->where('id_role', 8)->findAll(),
+			'p_c'     			=> $this->pegawaiModel->where('id_role', 9)->findAll(),
+			'r_v'     			=> $this->rvendorModel->findAll(),
+		];
+
+		return view('project', $data);
+	}
+  
+  	public function cronjob($project, $id) {
+   		$data = [
+        	'controller'    	=> ucwords('project'),
+			'title'     		=> ucwords('project'),
+          	'filter'			=> $project,
+          	'id'				=> $id
         ];
-
-        return view('project', $data);
+      
+      return view('cronjob', $data);
     }
-
-    public function getAll()
-    {
-        $response = $data['data'] = array();
-
-        $result = $this->projectModel->select()->findAll();
-        $no = 1;
-        foreach ($result as $key => $value) {
-            $ops = '<div class="btn-group text-white">';
-            $ops .= '<a class="btn btn-dark" onClick="save(' . $value->id_project . ')"><i class="fas fa-pencil-alt"></i></a>';
-            $ops .= '<a class="btn btn-secondary" onClick="remove(' . $value->id_project . ')"><i class="fas fa-trash-alt"></i></a>';
-            $ops .= '</div>';
-            $data['data'][$key] = array(
-                $no,
-                $value->client_name,
-                $value->project_name,
-                $value->start_date,
-                $value->end_date,
-                // link a href
-                '<a href="' . $value->link . '" target="_blank">' . $value->link . '</a>',
-                $value->status == 0 ? '<button class="btn btn-primary btn-sm"><i class="fas fa-sync"></i></button>' : '<button class="btn btn-success btn-sm"><i class="fas fa-check"></i></button>',
-                $ops
-            );
-            $no++;
+  
+  	public function sendEmailDaily() {
+		date_default_timezone_set('Asia/Jakarta');
+   		$resultPegawai = $this->pegawaiModel->findAll();
+        $resultVendor = $this->vendorModel->findAll();
+        foreach ($resultPegawai as $key => $value) {
+          	Project::sendMailPegawaiDaily($value->id_pegawai);
         }
-
-        return $this->response->setJSON($data);
-    }
-
-    public function getOne()
-    {
-        $response = array();
-
-        $id = $this->request->getPost('id_project');
-
-        if ($this->validation->check($id, 'required|numeric')) {
-
-            $data = $this->projectModel->where('id_project', $id)->first();
-
-            return $this->response->setJSON($data);
-        } else {
-            throw new \CodeIgniter\Exceptions\PageNotFoundException();
+        foreach ($resultVendor as $key => $value) {
+          	Project::sendMailVendorDaily($value->id_vendor);
         }
     }
 
-    public function add()
-    {
-        $response = array();
+	public function getAll()
+	{
+		$response = $data['data'] = array();
 
-        $fields['id_project'] = $this->request->getPost('id_project');
-        $fields['client_name'] = $this->request->getPost('client_name');
-        $fields['project_name'] = $this->request->getPost('project_name');
-        $fields['start_date'] = $this->request->getPost('start_date');
-        $fields['end_date'] = $this->request->getPost('end_date');
-        $fields['link'] = $this->request->getPost('link');
+		$result = $this->projectModel->select()->findAll();
+		$no = 1;
+		foreach ($result as $key => $value) {
+			$ops = '<div class="btn-group text-white">';
+			$ops .= '<a class="btn btn-dark" onClick="save(' . $value->id_project . ')"><i class="fas fa-pencil-alt"></i></a>';
+			$ops .= '<a class="btn btn-secondary" onClick="remove(' . $value->id_project . ')"><i class="fas fa-trash-alt"></i></a>';
+			$ops .= '</div>';
+			$data['data'][$key] = array(
+				$no,
+				$value->client_name,
+				$value->project_name,
+				$value->start_date,
+				$value->end_date,
+				$value->link,
+				$value->status == 0 ? '<button class="btn btn-primary btn-sm"><i class="fas fa-sync"></i></button>' : '<button class="btn btn-success btn-sm"><i class="fas fa-check"></i></button>',
+				$ops
+			);
+			$no++;
+		}
 
-        $this->validation->setRules([
-            'client_name' => ['label' => 'Client name', 'rules' => 'required|min_length[0]|max_length[100]'],
-            'project_name' => ['label' => 'Project name', 'rules' => 'required|min_length[0]|max_length[100]'],
-            'start_date' => ['label' => 'Start date', 'rules' => 'permit_empty|min_length[0]'],
-            'end_date' => ['label' => 'End date', 'rules' => 'permit_empty|min_length[0]'],
-            'link' => ['label' => 'Link', 'rules' => 'required|min_length[0]|max_length[200]']
+		return $this->response->setJSON($data);
+	}
 
-        ]);
+	public function getOne()
+	{
+		$response = array();
 
-        if ($this->validation->run($fields) == FALSE) {
+		$id = $this->request->getPost('id_project');
 
-            $response['success'] = false;
-            $response['messages'] = $this->validation->getErrors(); //Show Error in Input Form
+		if ($this->validation->check($id, 'required|numeric')) {
 
-        } else {
-            $myTime = new Time($this->request->getPost('end_date'));
-            $currTime = new Time($this->request->getPost('start_date'));
+			$data = $this->projectModel->where('id_project', $id)->first();
 
-            if ($this->projectModel->insert($fields)) {
-                $db = db_connect();
-                $vendor = [
-                    [
-                        'vendor_id' => $this->request->getPost('v1'),
-                        'project_id' => $this->projectModel->getInsertID(),
-                        'start_date' => $this->request->getPost('start_date'),
-                        'end_date' => $myTime->modify('-4 Days'),
-                        'status' => 0
-                    ],
-                    [
-                        'vendor_id' => $this->request->getPost('v2'),
-                        'project_id' => $this->projectModel->getInsertID(),
-                        'start_date' => $this->request->getPost('start_date'),
-                        'end_date' => $myTime->modify('-4 Days'),
-                        'status' => 0
-                    ],
-                    [
-                        'vendor_id' => $this->request->getPost('v3'),
-                        'project_id' => $this->projectModel->getInsertID(),
-                        'start_date' => $this->request->getPost('start_date'),
-                        'end_date' => $myTime->modify('-4 Days'),
-                        'status' => 0
-                    ],
-                    [
-                        'vendor_id' => $this->request->getPost('v4'),
-                        'project_id' => $this->projectModel->getInsertID(),
-                        'start_date' => $this->request->getPost('start_date'),
-                        'end_date' => $myTime->modify('-4 Days'),
-                        'status' => 0
-                    ]
-                ];
+			return $this->response->setJSON($data);
+		} else {
+			throw new \CodeIgniter\Exceptions\PageNotFoundException();
+		}
+	}
 
-                $v1 = $this->vendorModel->find($this->request->getPost('v1'));
-                $v2 = $this->vendorModel->find($this->request->getPost('v2'));
-                $v3 = $this->vendorModel->find($this->request->getPost('v3'));
-                $v4 = $this->vendorModel->find($this->request->getPost('v4'));
+	public function add()
+	{
+		$response = array();
+
+		$fields['id_project'] = $this->request->getPost('id_project');
+		$fields['client_name'] = $this->request->getPost('client_name');
+		$fields['project_name'] = $this->request->getPost('project_name');
+		$fields['start_date'] = $this->request->getPost('start_date');
+		$fields['end_date'] = $this->request->getPost('end_date');
+		$fields['link'] = $this->request->getPost('link');
+
+		$this->validation->setRules([
+			'client_name' => ['label' => 'Client name', 'rules' => 'required|min_length[0]|max_length[100]'],
+			'project_name' => ['label' => 'Project name', 'rules' => 'required|min_length[0]|max_length[100]'],
+			'start_date' => ['label' => 'Start date', 'rules' => 'permit_empty|min_length[0]'],
+			'end_date' => ['label' => 'End date', 'rules' => 'permit_empty|min_length[0]'],
+		]);
+
+		if ($this->validation->run($fields) == FALSE) {
+
+			$response['success'] = false;
+			$response['messages'] = $this->validation->getErrors(); //Show Error in Input Form
+
+		} else {
+			$myTime = new Time($this->request->getPost('end_date'));
+			$currTime = new Time($this->request->getPost('start_date'));
+
+			if ($this->projectModel->insert($fields)) {
+				$db = db_connect();
+				$vendor = [
+					[
+						'vendor_id' => $this->request->getPost('v1'),
+						'project_id' => $this->projectModel->getInsertID(),
+						'start_date' => $this->request->getPost('start_date'),
+						'end_date' => $myTime->modify('-4 Days'),
+						'status' => 0
+					],
+					[
+						'vendor_id' => $this->request->getPost('v2'),
+						'project_id' => $this->projectModel->getInsertID(),
+						'start_date' => $this->request->getPost('start_date'),
+						'end_date' => $myTime->modify('-4 Days'),
+						'status' => 0
+					],
+					[
+						'vendor_id' => $this->request->getPost('v3'),
+						'project_id' => $this->projectModel->getInsertID(),
+						'start_date' => $this->request->getPost('start_date'),
+						'end_date' => $myTime->modify('-4 Days'),
+						'status' => 0
+					],
+					[
+						'vendor_id' => $this->request->getPost('v4'),
+						'project_id' => $this->projectModel->getInsertID(),
+						'start_date' => $this->request->getPost('start_date'),
+						'end_date' => $myTime->modify('-4 Days'),
+						'status' => 0
+					]
+				];
+ 
+				$v1 = $this->vendorModel->find($this->request->getPost('v1'));
+				$v2 = $this->vendorModel->find($this->request->getPost('v2'));
+				$v3 = $this->vendorModel->find($this->request->getPost('v3'));
+				$v4 = $this->vendorModel->find($this->request->getPost('v4'));
 
                 $ass = 'New Assigment ';
                 $ass .= date('Y-m-d H:i:s');
                 $ass .= ' ';
+                
+				Project::sendMailVendor($v1->email, $ass, $v1->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
+				Project::sendMailVendor($v2->email, $ass, $v2->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
+				Project::sendMailVendor($v3->email, $ass, $v3->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
+				Project::sendMailVendor($v4->email, $ass, $v4->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
 
-                Project::sendMailVendor($v1->email, $ass, $v1->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
-                Project::sendMailVendor($v2->email, $ass, $v2->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
-                Project::sendMailVendor($v3->email, $ass, $v3->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
-                Project::sendMailVendor($v4->email, $ass, $v4->vendor_name, $this->request->getPost('client_name'), $currTime, $myTime->modify('-4 Days'));
+				$db->table('project_vendor')->insertBatch($vendor);
 
-                $db->table('project_vendor')->insertBatch($vendor);
-
-                $pegawai = [
-                    [
-                        'pegawai_id' => $this->request->getPost('p2'),
-                        'project_id' => $this->projectModel->getInsertID(),
-                        'start_date' => $myTime->modify('-3 Days'),
-                        'end_date' => $this->request->getPost('end_date'),
-                        'status' => 0
-                    ],
-                    [
-                        'pegawai_id' => $this->request->getPost('p3'),
-                        'project_id' => $this->projectModel->getInsertID(),
-                        'start_date' => $myTime->modify('-3 Days'),
-                        'end_date' => $this->request->getPost('end_date'),
-                        'status' => 0
-                    ]
-                ];
+				$pegawai = [
+					[
+						'pegawai_id' => $this->request->getPost('p2'),
+						'project_id' => $this->projectModel->getInsertID(),
+						'start_date' => $myTime->modify('-3 Days'),
+						'end_date' => $this->request->getPost('end_date'),
+						'status' => 0
+					],
+					[
+						'pegawai_id' => $this->request->getPost('p3'),
+						'project_id' => $this->projectModel->getInsertID(),
+						'start_date' => $myTime->modify('-3 Days'),
+						'end_date' => $this->request->getPost('end_date'),
+						'status' => 0
+					]
+				];
 
                 $p1 = $this->pegawaiModel->find($this->request->getPost('p2'));
-                $p2 = $this->pegawaiModel->find($this->request->getPost('p3'));
+				$p2 = $this->pegawaiModel->find($this->request->getPost('p3'));
 
                 Project::sendMailPegawai($p1->email, $ass, $p1->pegawai_name, $this->request->getPost('client_name'), $myTime->modify('-3 Days'), $myTime);
-                Project::sendMailPegawai($p2->email, $ass, $p2->pegawai_name, $this->request->getPost('client_name'), $myTime->modify('-3 Days'), $myTime);
+				Project::sendMailPegawai($p2->email, $ass, $p2->pegawai_name, $this->request->getPost('client_name'), $myTime->modify('-3 Days'), $myTime);
 
-                $db->table('project_pegawai')->insertBatch($pegawai);
+				$db->table('project_pegawai')->insertBatch($pegawai);
 
-                $response['success'] = true;
-                $response['messages'] = lang("App.insert-success");
-            } else {
+				$response['success'] = true;
+				$response['messages'] = lang("App.insert-success");
+			} else {
 
-                $response['success'] = false;
-                $response['messages'] = lang("App.insert-error");
-            }
-        }
+				$response['success'] = false;
+				$response['messages'] = lang("App.insert-error");
+			}
+		}
 
-        return $this->response->setJSON($response);
-    }
+		return $this->response->setJSON($response);
+	}
 
-    public function edit()
-    {
-        $response = array();
+	public function edit()
+	{
+		$response = array();
 
-        $fields['id_project'] = $this->request->getPost('id_project');
-        $fields['client_name'] = $this->request->getPost('client_name');
-        $fields['project_name'] = $this->request->getPost('project_name');
-        $fields['start_date'] = $this->request->getPost('start_date');
-        $fields['end_date'] = $this->request->getPost('end_date');
-        $fields['link'] = $this->request->getPost('link');
-        $fields['status'] = $this->request->getPost('status');
+		$fields['id_project'] = $this->request->getPost('id_project');
+		$fields['client_name'] = $this->request->getPost('client_name');
+		$fields['project_name'] = $this->request->getPost('project_name');
+		$fields['start_date'] = $this->request->getPost('start_date');
+		$fields['end_date'] = $this->request->getPost('end_date');
+		$fields['link'] = $this->request->getPost('link');
+		$fields['status'] = $this->request->getPost('status');
 
-        $this->validation->setRules([
-            'client_name' => ['label' => 'Client name', 'rules' => 'required|min_length[0]|max_length[100]'],
-            'project_name' => ['label' => 'Project name', 'rules' => 'required|min_length[0]|max_length[100]'],
-            'start_date' => ['label' => 'Start date', 'rules' => 'permit_empty|min_length[0]'],
-            'end_date' => ['label' => 'End date', 'rules' => 'permit_empty|min_length[0]'],
-            'link' => ['label' => 'Link', 'rules' => 'required|min_length[0]|max_length[200]']
-        ]);
+		$this->validation->setRules([
+			'client_name' => ['label' => 'Client name', 'rules' => 'required|min_length[0]|max_length[100]'],
+			'project_name' => ['label' => 'Project name', 'rules' => 'required|min_length[0]|max_length[100]'],
+			'start_date' => ['label' => 'Start date', 'rules' => 'permit_empty|min_length[0]'],
+			'end_date' => ['label' => 'End date', 'rules' => 'permit_empty|min_length[0]'],
+			'link' => ['label' => 'Link', 'rules' => 'required|min_length[0]|max_length[200]']
+		]);
 
-        if ($this->validation->run($fields) == FALSE) {
+		if ($this->validation->run($fields) == FALSE) {
 
-            $response['success'] = false;
-            $response['messages'] = $this->validation->getErrors(); //Show Error in Input Form
+			$response['success'] = false;
+			$response['messages'] = $this->validation->getErrors(); //Show Error in Input Form
 
-        } else {
-            $myTime = new Time($this->request->getPost('end_date'));
+		} else {
+			$myTime = new Time($this->request->getPost('end_date'));
 
-            if ($this->projectModel->update($fields['id_project'], $fields)) {
-                $db = db_connect();
-                $vendor = [
-                    'start_date' => $this->request->getPost('start_date'),
-                    'end_date' => $myTime->modify('-4 Days')
-                ];
+			if ($this->projectModel->update($fields['id_project'], $fields)) {
+				$db = db_connect();
+				$vendor = [
+					'start_date' => $this->request->getPost('start_date'),
+					'end_date' => $myTime->modify('-4 Days')
+				];
 
-                $db->table('project_vendor')->where('project_id', $this->request->getPost('id_project'))->update($vendor);
+				$db->table('project_vendor')->where('project_id', $this->request->getPost('id_project'))->update($vendor);
 
-                $pegawai = [
-                    'start_date' => $myTime->modify('-3 Days'),
-                    'end_date' => $this->request->getPost('end_date')
-                ];
+				$pegawai = [
+					'start_date' => $myTime->modify('-3 Days'),
+					'end_date' => $this->request->getPost('end_date')
+				];
 
-                $db->table('project_pegawai')->where('project_id', $this->request->getPost('id_project'))->update($pegawai);
+				$db->table('project_pegawai')->where('project_id', $this->request->getPost('id_project'))->update($pegawai);
 
-                $response['success'] = true;
-                $response['messages'] = lang("App.insert-success");
-            } else {
+				$response['success'] = true;
+				$response['messages'] = lang("App.insert-success");
+			} else {
 
-                $response['success'] = false;
-                $response['messages'] = lang("App.insert-error");
-            }
-        }
+				$response['success'] = false;
+				$response['messages'] = lang("App.insert-error");
+			}
+		}
 
-        return $this->response->setJSON($response);
-    }
+		return $this->response->setJSON($response);
+	}
 
 
-    public function remove()
-    {
-        $response = array();
+	public function remove()
+	{
+		$response = array();
 
-        $id = $this->request->getPost('id_project');
+		$id = $this->request->getPost('id_project');
 
-        if (!$this->validation->check($id, 'required|numeric')) {
+		if (!$this->validation->check($id, 'required|numeric')) {
 
-            throw new \CodeIgniter\Exceptions\PageNotFoundException();
-        } else {
+			throw new \CodeIgniter\Exceptions\PageNotFoundException();
+		} else {
 
-            if ($this->projectModel->where('id_project', $id)->delete()) {
+			if ($this->projectModel->where('id_project', $id)->delete()) {
 
-                $response['success'] = true;
-                $response['messages'] = lang("App.delete-success");
-            } else {
+				$response['success'] = true;
+				$response['messages'] = lang("App.delete-success");
+			} else {
 
-                $response['success'] = false;
-                $response['messages'] = lang("App.delete-error");
-            }
-        }
+				$response['success'] = false;
+				$response['messages'] = lang("App.delete-error");
+			}
+		}
 
-        return $this->response->setJSON($response);
-    }
+		return $this->response->setJSON($response);
+	}
 
-    public static function sendMailVendor($v, $subject,  $vendorName, $clientName, $start, $deadline)
-    {
-        $email = \Config\Services::email();
-        $message = '
+	public static function sendMailVendor($v, $subject, $vendorName, $clientName, $start, $deadline)
+	{
+		$email = \Config\Services::email();
+		$message = '
 		<!DOCTYPE html>
             <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"            xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -620,17 +640,17 @@ class Project extends BaseController
                                         <tr>
                                             <td style="padding: 0 2.5em; text-align: center; padding-bottom: 3em;">
                                                 <div class="text">
-                                                    <h2>Hai vendor ' . $vendorName . ', ada project baru dari client ' . $clientName . '</h2>
+                                                    <h2>Hai vendor ' . $vendorName . ', ada project baru dari client '. $clientName .'</h2>
                                                     <br>
                                                     <h4 style="color:black;">Waktu Pelaksanaan</h4>
-                                                    <h4 style="color:black;">' . $start . ' - ' . $deadline . '</h4>
+                                                    <h4 style="color:black;">'.$start.' - '.$deadline.'</h4>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center;">
                                                 <div class="text-author">
-                                                    <p><a href="' . base_url() . '" class="btn btn-primary">Menuju ke Aplikasi</a></p>
+                                                    <p><a href="'. base_url() .'" class="btn btn-primary">Menuju ke Aplikasi</a></p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -659,12 +679,12 @@ class Project extends BaseController
         $email->send();
 
         return true;
-    }
+	}
 
-    public static function sendMailPegawai($v, $subject, $pegawaiName, $clientName, $start, $deadline)
-    {
-        $email = \Config\Services::email();
-        $message = '
+    public static function sendMailPegawai($v, $subject, $pegawaiName,  $clientName, $start, $deadline)
+	{
+		$email = \Config\Services::email();
+		$message = '
 		<!DOCTYPE html>
             <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"            xmlns:o="urn:schemas-microsoft-com:office:office">
 
@@ -994,17 +1014,17 @@ class Project extends BaseController
                                         <tr>
                                             <td style="padding: 0 2.5em; text-align: center; padding-bottom: 3em;">
                                                 <div class="text">
-                                                    <h2>Hai pegawai ' . $pegawaiName . ', ada project baru dari client ' . $clientName . '</h2>
+                                                    <h2>Hai pegawai ' . $pegawaiName . ', ada project baru dari client '. $clientName .'</h2>
                                                     <br>
                                                     <h4 style="color:black;">Waktu Pelaksanaan</h4>
-                                                    <h4 style="color:black;">' . $start . ' - ' . $deadline . '</h4>
+                                                    <h4 style="color:black;">'.$start.' - '.$deadline.'</h4>
                                                 </div>
                                             </td>
                                         </tr>
                                         <tr>
                                             <td style="text-align: center;">
                                                 <div class="text-author">
-                                                    <p><a href="' . base_url() . '" class="btn btn-primary">Menuju ke Aplikasi</a></p>
+                                                    <p><a href="'. base_url() .'" class="btn btn-primary">Menuju ke Aplikasi</a></p>
                                                 </div>
                                             </td>
                                         </tr>
@@ -1033,5 +1053,47 @@ class Project extends BaseController
         $email->send();
 
         return true;
-    }
+	}
+	
+	public static function sendMailPegawaiDaily($id_pegawai)
+	{
+	    $pegawaiModel =new PegawaiModel();
+        $getEmail = $pegawaiModel->find($id_pegawai);
+        $config = \Config\Services::email();
+		$email  = service('email');
+        $template_url = base_url() . 'project/cronjob/pegawai/' . $id_pegawai;
+   		$html = file_get_contents($template_url); 
+        $email->setFrom($config->fromEmail, $config->fromName)
+            ->setTo($getEmail->email)
+            ->setSubject('Laporan Harian Pegawai ' . date('d M Y'))
+            ->setMessage(view('App\Views\cronjob', [
+              'title' => 'Laporan Harian Pegawai ' . date('d M Y'),
+              'filter' => 'pegawai',
+              'id' => $id_pegawai		
+            ]))
+            ->setMailType('html')
+            ->send();
+        return true;		
+	}
+	
+	public static function sendMailVendorDaily($id_vendor)
+	{
+	    $vendorModel = new VendorModel();
+      	$getEmail = $vendorModel->find($id_vendor);
+        $config =\Config\Services::email();
+		$email  = service('email');
+        $template_url = base_url() . 'project/cronjob/vendor/' . $id_vendor;
+   		$html = file_get_contents($template_url); 
+        $email->setFrom($config->fromEmail, $config->fromName)
+            ->setTo($getEmail->email)
+            ->setSubject('Laporan Harian Vendor ' . date('d M Y'))
+            ->setMessage(view('App\Views\cronjob', [
+              'title' => 'Laporan Harian Vendor ' . date('d M Y'),
+              'filter' => 'vendor',
+              'id' => $id_vendor		
+            ]))
+            ->setMailType('html')
+            ->send();
+        return true;
+	}
 }

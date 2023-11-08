@@ -1,0 +1,1953 @@
+CRITICAL - 2023-10-31 00:15:02 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:15:02 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 97.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 97, [...])
+ 2 APPPATH/Controllers/Project.php(97): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:19:02 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:19:02 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 97.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 97, [...])
+ 2 APPPATH/Controllers/Project.php(97): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:20:02 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:20:02 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 97.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 97, [...])
+ 2 APPPATH/Controllers/Project.php(97): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:20:32 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:20:32 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 99, [...])
+ 2 APPPATH/Controllers/Project.php(99): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:21:01 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:21:01 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 99, [...])
+ 2 APPPATH/Controllers/Project.php(99): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:22:02 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:22:02 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 99, [...])
+ 2 APPPATH/Controllers/Project.php(99): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:22:19 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:23:02 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:23:02 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 99, [...])
+ 2 APPPATH/Controllers/Project.php(99): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:24:02 --> Undefined index: full_name
+in APPPATH/Views/cronjob.php on line 48.
+ 1 APPPATH/Views/cronjob.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: full_name', '/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php', 48, [...])
+ 2 SYSTEMPATH/View/View.php(213): include('/home/worp5113/public_html/ci4workflow/app/Views/cronjob.php')
+ 3 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH/Common.php(1184): CodeIgniter\View\View->render('cronjob', [], true)
+ 5 APPPATH/Controllers/Project.php(73): view('cronjob', [...])
+ 6 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->cronjob('pegawai', '5')
+ 7 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 8 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-10-31 00:24:02 --> file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+
+in APPPATH/Controllers/Project.php on line 99.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'file_get_contents(https://www.workflow-dm.com/public//project/cronjob/pegawai/5): failed to open stream: HTTP request failed! HTTP/1.1 500 Internal Server Error
+', '/home/worp5113/public_html/ci4workflow/app/Controllers/Project.php', 99, [...])
+ 2 APPPATH/Controllers/Project.php(99): file_get_contents('https://www.workflow-dm.com/public//project/cronjob/pegawai/5')
+ 3 APPPATH/Controllers/Project.php(82): App\Controllers\Project::sendMailPegawaiDaily('5')
+ 4 SYSTEMPATH/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+ 5 SYSTEMPATH/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+ 6 SYSTEMPATH/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-10-31 00:25:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:08 --> 220 smtp.gmail.com ESMTP t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:25:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:12 --> 220 smtp.gmail.com ESMTP t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:25:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:12 --> 220 smtp.gmail.com ESMTP t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+quit: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+ERROR - 2023-10-31 00:25:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:12 --> 220 smtp.gmail.com ESMTP t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+quit: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+ERROR - 2023-10-31 00:25:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:12 --> 220 smtp.gmail.com ESMTP t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+quit: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:25:12 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #12, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:25:12 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:12 --> 220 smtp.gmail.com ESMTP t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+quit: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection t6-20020a62d146000000b006babcf86b84sm6420260pfl.34 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:12 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #12, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:25:27 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:27 --> 220 smtp.gmail.com ESMTP s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:25:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:28 --> 220 smtp.gmail.com ESMTP s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:25:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:28 --> 220 smtp.gmail.com ESMTP s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+quit: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+ERROR - 2023-10-31 00:25:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:28 --> 220 smtp.gmail.com ESMTP s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+quit: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+ERROR - 2023-10-31 00:25:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:28 --> 220 smtp.gmail.com ESMTP s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+quit: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:25:28 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #11, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:25:28 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:28 --> 220 smtp.gmail.com ESMTP s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+quit: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection s18-20020a17090330d200b001c5eb2c4d8csm6560082plc.160 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:25:28 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #11, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:26:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:08 --> 220 smtp.gmail.com ESMTP r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:26:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:10 --> 220 smtp.gmail.com ESMTP r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:26:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:10 --> 220 smtp.gmail.com ESMTP r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+quit: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+ERROR - 2023-10-31 00:26:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:10 --> 220 smtp.gmail.com ESMTP r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+quit: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+ERROR - 2023-10-31 00:26:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:10 --> 220 smtp.gmail.com ESMTP r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+quit: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:26:10 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:26:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:10 --> 220 smtp.gmail.com ESMTP r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+quit: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection r26-20020a638f5a000000b005b2f3b5d3a4sm4926752pgn.24 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:26:10 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:27:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:08 --> 220 smtp.gmail.com ESMTP si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:27:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:10 --> 220 smtp.gmail.com ESMTP si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:27:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:10 --> 220 smtp.gmail.com ESMTP si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+quit: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+ERROR - 2023-10-31 00:27:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:10 --> 220 smtp.gmail.com ESMTP si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+quit: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+ERROR - 2023-10-31 00:27:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:10 --> 220 smtp.gmail.com ESMTP si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+quit: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:27:10 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:27:10 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:10 --> 220 smtp.gmail.com ESMTP si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+quit: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection si2-20020a17090b528200b00280786d9194sm1381531pjb.7 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:27:10 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:28:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:08 --> 220 smtp.gmail.com ESMTP y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:28:13 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:13 --> 220 smtp.gmail.com ESMTP y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:28:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:14 --> 220 smtp.gmail.com ESMTP y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:28:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:14 --> 220 smtp.gmail.com ESMTP y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 451-4.5.0 SMTP protocol violation. Please visit
+451-4.5.0  https://support.google.com/a/answer/3221692 and review RFC 5321
+451 4.5.0 specifications for more information. y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+ERROR - 2023-10-31 00:28:14 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL: Broken pipe in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL: ...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('4')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:28:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:14 --> 220 smtp.gmail.com ESMTP y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 451-4.5.0 SMTP protocol violation. Please visit
+451-4.5.0  https://support.google.com/a/answer/3221692 and review RFC 5321
+451 4.5.0 specifications for more information. y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:14 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL: Broken pipe in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL: ...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:28:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:14 --> 220 smtp.gmail.com ESMTP y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 451-4.5.0 SMTP protocol violation. Please visit
+451-4.5.0  https://support.google.com/a/answer/3221692 and review RFC 5321
+451 4.5.0 specifications for more information. y1-20020a170902700100b001ca82a4a9c0sm6373669plk.309 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:28:14 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1409E10F:SSL routines:ssl3_write_bytes:bad length in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:29:23 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:23 --> 220 smtp.gmail.com ESMTP l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:29:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:29 --> 220 smtp.gmail.com ESMTP l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:29:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:30 --> 220 smtp.gmail.com ESMTP l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:29:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:30 --> 220 smtp.gmail.com ESMTP l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 451-4.5.0 SMTP protocol violation. Please visit
+451-4.5.0  https://support.google.com/a/answer/3221692 and review RFC 5321
+451 4.5.0 specifications for more information. l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+ERROR - 2023-10-31 00:29:30 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL: Broken pipe in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL: ...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('4')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:29:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:30 --> 220 smtp.gmail.com ESMTP l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 451-4.5.0 SMTP protocol violation. Please visit
+451-4.5.0  https://support.google.com/a/answer/3221692 and review RFC 5321
+451 4.5.0 specifications for more information. l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:30 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL: Broken pipe in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL: ...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(130): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(85): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:29:30 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:30 --> 220 smtp.gmail.com ESMTP l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 451-4.5.0 SMTP protocol violation. Please visit
+451-4.5.0  https://support.google.com/a/answer/3221692 and review RFC 5321
+451 4.5.0 specifications for more information. l16-20020a170903245000b001cc50f67fbasm1849972pls.281 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:29:30 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1409E10F:SSL routines:ssl3_write_bytes:bad length in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:32:46 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:46 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:32:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:47 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:32:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:47 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+quit: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+ERROR - 2023-10-31 00:32:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:47 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+quit: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+ERROR - 2023-10-31 00:32:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:47 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+quit: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:32:47 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(115): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(70): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:32:47 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:47 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+quit: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection b1-20020a170902d30100b001c73f3a9b7fsm6507968plc.185 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:32:47 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+ERROR - 2023-10-31 00:42:45 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:42:45 --> 220 smtp.gmail.com ESMTP o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+to: 250 2.1.5 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+ERROR - 2023-10-31 00:42:49 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:42:49 --> 220 smtp.gmail.com ESMTP o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+to: 250 2.1.5 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 354  Go ahead o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+ERROR - 2023-10-31 00:42:54 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:42:54 --> 220 smtp.gmail.com ESMTP o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+to: 250 2.1.5 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 354  Go ahead o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:42:59 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:42:59 --> 220 smtp.gmail.com ESMTP o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+to: 250 2.1.5 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 354  Go ahead o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:43:04 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:43:04 --> 220 smtp.gmail.com ESMTP o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+to: 250 2.1.5 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 354  Go ahead o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:43:09 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:43:09 --> 220 smtp.gmail.com ESMTP o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+from: 250 2.1.0 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+to: 250 2.1.5 OK o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+data: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 354  Go ahead o2-20020a170902d4c200b001c9d011581dsm6506967plg.164 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+INFO - 2023-10-31 00:44:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 00:45:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 00:47:29 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:29 --> 220 smtp.gmail.com ESMTP l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+ERROR - 2023-10-31 00:47:33 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:33 --> 220 smtp.gmail.com ESMTP l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+ERROR - 2023-10-31 00:47:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:34 --> 220 smtp.gmail.com ESMTP l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+quit: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+ERROR - 2023-10-31 00:47:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:34 --> 220 smtp.gmail.com ESMTP l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+quit: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+ERROR - 2023-10-31 00:47:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:34 --> 220 smtp.gmail.com ESMTP l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+quit: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+ERROR - 2023-10-31 00:47:34 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'AUTH LOGIN\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1992): CodeIgniter\Email\Email->sendData('AUTH LOGIN\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPAuthenticate()
+#4 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#5 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#6 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(1098): CodeIgniter\Email\Email->send()
+#7 /home/worp5113/public_html/ci4workflow/app/Controllers/Project.php(69): App\Controllers\Project::sendMailVendorDaily('5')
+#8 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(934): App\Controllers\Project->sendEmailDaily()
+#9 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Project))
+#10 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 /home/worp5113/public_html/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+ERROR - 2023-10-31 00:47:34 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:34 --> 220 smtp.gmail.com ESMTP l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 235 2.7.0 Accepted
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+from: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 503-5.5.1 MAIL first. Please visit
+503-5.5.1  https://support.google.com/a/answer/3221692 and review RFC 5321
+503 5.5.1 specifications for more information. l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+quit: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+The following SMTP error was encountered: 250 2.1.0 OK l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 221 2.0.0 closing connection l15-20020a170902f68f00b001c73f3a9b88sm6517077plg.110 - gsmtp
+
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+Failed to send AUTH LOGIN command. Error: 
+Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:47:34 --> Email: sendWithSmtp throwed ErrorException: fwrite(): SSL operation failed with code 1. OpenSSL Error messages:
+error:1420C0CF:SSL routines:ssl_write_internal:protocol is shutdown in /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php:2042
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'fwrite(): SSL o...', '/home/worp5113/...', 2042, Array)
+#1 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2042): fwrite(Resource id #151, 'QUIT\r\n')
+#2 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(1951): CodeIgniter\Email\Email->sendData('QUIT\r\n')
+#3 /home/worp5113/public_html/ci4workflow/vendor/codeigniter4/framework/system/Email/Email.php(2184): CodeIgniter\Email\Email->sendCommand('quit')
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
+INFO - 2023-10-31 00:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 00:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 00:48:24 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:48:24 --> 220 smtp.gmail.com ESMTP d3-20020aa78683000000b006bdfb718e17sm6194416pfo.124 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+INFO - 2023-10-31 00:48:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 00:48:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 00:48:43 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:48:43 --> 220 smtp.gmail.com ESMTP b1-20020a170902d30100b001c73f3a9b7fsm6519188plc.185 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+INFO - 2023-10-31 00:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 00:48:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 00:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-10-31 00:53:50 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-31 00:53:50 --> 220 smtp.gmail.com ESMTP u2-20020a1709026e0200b001c57aac6e5esm6701171plk.23 - gsmtp
+
+hello: 250-smtp.gmail.com at your service, [2001:df1:7800:2::40]
+250-SIZE 35882577
+250-8BITMIME
+250-AUTH LOGIN PLAIN XOAUTH2 PLAIN-CLIENTTOKEN OAUTHBEARER XOAUTH
+250-ENHANCEDSTATUSCODES
+250-PIPELINING
+250-CHUNKING
+250 SMTPUTF8
+
+Failed to authenticate password. Error: 
+INFO - 2023-10-31 00:53:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 00:53:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:01:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:01:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:01:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:02:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 15:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 08:03:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 16:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 16:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-10-31 09:37:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

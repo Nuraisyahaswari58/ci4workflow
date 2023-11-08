@@ -22,16 +22,19 @@ class Login extends BaseController
     public function admin()
     {
         $data = [
-            'title' => 'Login Admin'
+            'title' => 'Login Admin',
+            'cookie_mail_admin' => isset($_COOKIE['auth']) ? json_decode(aeshash('dec', $_COOKIE['auth'], env('encryption.key')))->email : null,
         ];
 
         return view('login_admin', $data);
     }
 
+    
     public function vendor()
     {
         $data = [
-            'title' => 'Login Vendor'
+            'title' => 'Login Vendor',
+            'cookie_mail_vendor' => isset($_COOKIE['auth']) ? json_decode(aeshash('dec', $_COOKIE['auth'], env('encryption.key')))->email : null,
         ];
 
         return view('login_vendor', $data);
@@ -40,34 +43,96 @@ class Login extends BaseController
     public function pegawai()
     {
         $data = [
-            'title' => 'Login Pegawai'
-
+            'title' => 'Login Pegawai',
+            'cookie_mail_pegawai' => isset($_COOKIE['auth']) ? json_decode(aeshash('dec', $_COOKIE['auth'], env('encryption.key')))->email : null,
         ];
         return view('login_pegawai', $data);
     }
 
+    // public function ceklogin()
+    // {
+    //     $login = $this->request->getPost('login');
+    //     $password = $this->request->getPost('password');
+    //     $remember = isset($_POST["remember"]) ? true : false;
+
+    //     $userType = $this->request->uri->getSegment(2);
+    //     $model = $userType == 'Admin' ? $this->Admin : ($userType == 'Vendor' ? $this->Vendor : $this->Pegawai);
+
+    //     $findUser = $model->where('username', $login)->orWhere('email', $login)->first();
+    //     if (!$findUser || !password_verify((string)$password, $findUser->password)) {
+    //         return redirect()->to('/login/' . $userType)->withInput()->with('error', 'Invalid credentials');
+    //     }
+
+    //     $params = [
+    //                 'id' => $userType == 'Admin' ? $findUser->id_admin : ($userType == 'Pegawai' ? $findUser->id_pegawai : $findUser->id_vendor),
+    //                 'username' => $findUser->username,
+    //                 'email' => $findUser->email,
+    //                 'level' =>  $userType == 'Admin' ? 'Admin' : ($userType == 'Pegawai' ? 'Pegawai' : 'Vendor'),
+    //     ];
+        
+    //     helper('aeshash');
+
+    //   $auth_hash = aeshash('enc', json_encode($params), env('encryption.key'));
+
+    //     session()->set('auth', $params);
+
+    //     if ($remember) {
+    //         setcookie('auth', $auth_hash, time() + (86400 * 30), '/');
+    //     }
+
+    //     session()->set($params);
+    //     return redirect()->to('/dashboard');
+       
+    // }
+    
     public function ceklogin()
-    {
-        $login = $this->request->getPost('login');
-        $password = $this->request->getPost('password');
+{
+    $login = $this->request->getPost('login');
+    $password = $this->request->getPost('password');
+    $remember = isset($_POST["remember"]) ? true : false;
 
-        $userType = $this->request->uri->getSegment(2);
-        $model = $userType == 'Admin' ? $this->Admin : ($userType == 'Vendor' ? $this->Vendor : $this->Pegawai);
+    $userType = $this->request->uri->getSegment(2);
+    $model = $userType == 'Admin' ? $this->Admin : ($userType == 'Vendor' ? $this->Vendor : $this->Pegawai);
 
-        $findUser = $model->where('username', $login)->orWhere('email', $login)->first();
-        if (!$findUser || !password_verify((string)$password, $findUser->password)) {
-            return redirect()->to('/login/' . $userType)->withInput()->with('error', 'Invalid credentials');
-        }
-
-        session()->set([
-            'id' => $userType == 'Admin' ? $findUser->id_admin : ($userType == 'Pegawai' ? $findUser->id_pegawai : $findUser->id_vendor),
-            'username' => $findUser->username,
-            'email' => $findUser->email,
-            'level' =>  $userType == 'Admin' ? 'Admin' : ($userType == 'Pegawai' ? 'Pegawai' : 'Vendor'),
-        ]);
-
-        return redirect()->to('/dashboard');
+    $findUser = $model->where('username', $login)->orWhere('email', $login)->findAll();
+    if (empty($findUser)) {
+        return redirect()->to('/login/' . $userType)->withInput()->with('error', 'Invalid credentials');
     }
+
+    $authenticated = false;
+
+    // Loop through the results to check the password
+    foreach ($findUser as $user) {
+        if (password_verify((string)$password, $user->password)) {
+            $params = [
+                'id' => $userType == 'Admin' ? $user->id_admin : ($userType == 'Pegawai' ? $user->id_pegawai : $user->id_vendor),
+                'username' => $user->username,
+                'email' => $user->email,
+                'level' => $userType == 'Admin' ? 'Admin' : ($userType == 'Pegawai' ? 'Pegawai' : 'Vendor'),
+            ];
+
+            helper('aeshash');
+            $auth_hash = aeshash('enc', json_encode($params), env('encryption.key'));
+
+            session()->set('auth', $params);
+
+            if ($remember) {
+                setcookie('auth', $auth_hash, time() + (86400 * 30), '/');
+            }
+
+            session()->set($params);
+            $authenticated = true;
+            break;
+        }
+    }
+
+    if (!$authenticated) {
+        return redirect()->to('/login/' . $userType)->withInput()->with('error', 'Invalid credentials');
+    }
+
+    return redirect()->to('/dashboard');
+}
+
 
     public function logout()
     {
@@ -84,10 +149,11 @@ class Login extends BaseController
         return view('lupa_password', $data);
     }
 
-    public function sendMail()
-    {
+public function sendMail()
+{
+    try {
         $email = $this->request->getPost('email');
-        $userType= $this->request->getPost('role');
+        $userType = $this->request->getPost('role');
         $model = $userType == 'Admin' ? $this->Admin : ($userType == 'Vendor' ? $this->Vendor : $this->Pegawai);
 
         $findUser = $model->where('email', $email)->first();
@@ -96,7 +162,7 @@ class Login extends BaseController
         }
 
         $token = bin2hex(random_bytes(50));
-        $model->update( $userType == 'Admin' ? $findUser->id_admin : ($userType == 'Pegawai' ? $findUser->id_pegawai : $findUser->id_vendor), [
+        $model->update($userType == 'Admin' ? $findUser->id_admin : ($userType == 'Pegawai' ? $findUser->id_pegawai : $findUser->id_vendor), [
             'reset_token' => $token,
             'reset_at' => date('Y-m-d H:i:s')
         ]);
@@ -115,8 +181,13 @@ class Login extends BaseController
         } else {
             return redirect()->to('/login/' . $userType . '/lupapassword')->withInput()->with('error', 'Gagal mengirim email');
         }
-
+    } catch (\Exception $e) {
+        // Tangani pengecualian di sini, misalnya, catat pesan kesalahan atau lakukan tindakan lain yang sesuai.
+        log_message('error', 'Gagal mengirim email: ' . $e->getMessage());
+        return redirect()->to('/login/' . $userType . '/lupapassword')->withInput()->with('error', 'Gagal mengirim email');
     }
+}
+
 
     public function resetPassword()
     {

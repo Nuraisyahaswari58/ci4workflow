@@ -10,19 +10,22 @@
     <div class="form-group">
         <div class="input-group mb-3">
             <span class="input-group-text bg-transparent"><i class="ti-user"></i></span>
-            <input type="text" name="login" class="form-control ps-15 bg-transparent" placeholder="Email/Username">
+            <input type="text" name="login" value="<?= $cookie_mail_pegawai ?>" class="form-control ps-15 bg-transparent" placeholder="Email/Username">
         </div>
     </div>
     <div class="form-group">
-        <div class="input-group mb-3">
-            <span class="input-group-text  bg-transparent"><i class="ti-lock"></i></span>
-            <input name="password" type="password" class="form-control ps-15 bg-transparent" placeholder="Password">
-        </div>
+    <div class="input-group mb-3">
+        <span class="input-group-text bg-transparent"><i class="ti-lock"></i></span>
+        <input name="password" type="password" class="form-control ps-15 bg-transparent" placeholder="Password">
+        <span class="input-group-text bg-transparent">
+            <i class="fad fa-eye" id="togglePassword"></i>
+        </span>
+    </div>
     </div>
     <div class="row">
         <div class="col-6">
             <div class="checkbox">
-                <input type="checkbox" id="basic_checkbox_1">
+                <input type="checkbox"  name="remember" id="basic_checkbox_1" value="1">
                 <label for="basic_checkbox_1">Remember Me</label>
             </div>
         </div>

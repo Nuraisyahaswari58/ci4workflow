@@ -110,6 +110,14 @@ class Dashboard extends BaseController
         } else {
             $result = NULL;
         }
+        $linkprojectRoleOne = $db->table('vendor')->select('*')
+            ->join('project_vendor', 'vendor.id_vendor = project_vendor.vendor_id')
+            ->where('vendor.id_role', 3)
+            ->get()->getRowObject();
+        $linkprojectRoleTwo = $db->table('vendor')->select('*')
+            ->join('project_vendor', 'vendor.id_vendor = project_vendor.vendor_id')
+            ->where('vendor.id_role', 4)
+            ->get()->getRowObject();
         $no = 1;
         foreach ($result as $key => $value) {
             $deadline = Dashboard::timeLeft($value->end_date);
@@ -130,7 +138,7 @@ class Dashboard extends BaseController
                 $value->pegawai_name,
                 $value->role_name,
                 $deadline,
-                $value->link,
+                '<h6>Editing foto album dokumentasi </h6><a target="_blank" href="' . $linkprojectRoleOne->link . '">Klik Disini</a><br><br><h6>Editing foto album candid </h6><a target="_blank" href="' . $linkprojectRoleTwo->link . '">Klik Disini</a>',
                 $value->status == 0 ? '<button class="btn btn-primary btn-sm"><i class="fas fa-sync"></i></button>' : '<button class="btn btn-success btn-sm"><i class="fas fa-check"></i></button>',
             );
             $no++;

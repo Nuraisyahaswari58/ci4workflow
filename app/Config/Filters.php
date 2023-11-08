@@ -9,6 +9,7 @@ use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
 use App\Filters\LoginFilter;
+use App\Filters\AuthCookie;
 
 class Filters extends BaseConfig
 {
@@ -36,7 +37,8 @@ class Filters extends BaseConfig
                 'login/*' , 
                 'login/*/lupapassword', 
                 'login/*/resetPassword',
-                'login/sendMail'
+                'login/sendMail',
+                'project/*', 'project/*/*/*'
                 ]],
             // 'honeypot',
             // 'csrf',

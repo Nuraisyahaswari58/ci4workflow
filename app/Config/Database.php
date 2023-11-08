@@ -27,9 +27,9 @@ class Database extends Config
     public array $default = [
         'DSN'      => '',
         'hostname' => 'localhost',
-        'username' => '',
-        'password' => '',
-        'database' => '',
+        'username' => 'worp5113_ci4workflow',
+        'password' => 'aisyahuci',
+        'database' => 'worp5113_ci4workflow',
         'DBDriver' => 'MySQLi',
         'DBPrefix' => '',
         'pConnect' => false,

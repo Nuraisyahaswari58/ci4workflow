@@ -63,41 +63,7 @@
                                 </div>
                             </div>
                         </li>
-                        <!-- Notifications -->
-                        <li class="dropdown notifications-menu">
-                            <a href="#" class="waves-effect waves-light dropdown-toggle" data-bs-toggle="dropdown" title="Notifications">
-                                <i class="icon-Notifications"><span class="path1"></span><span class="path2"></span></i>
-                            </a>
-                            <ul class="dropdown-menu animated bounceIn">
-
-                                <li class="header">
-                                    <div class="p-20">
-                                        <div class="flexbox">
-                                            <div>
-                                                <h4 class="mb-0 mt-0">Notifications</h4>
-                                            </div>
-                                            <div>
-                                                <a href="#" class="text-danger">Clear All</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-
-                                <li>
-                                    <!-- inner menu: contains the actual data -->
-                                    <ul class="menu sm-scrol">
-                                        <li>
-                                            <a href="#">
-                                                <i class="fa fa-users text-info"></i> Curabitur id eros quis nunc suscipit blandit.
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li class="footer">
-                                    <a href="#">View all</a>
-                                </li>
-                            </ul>
-                        </li>
+                       
 
                         <!-- User Account-->
                         <li class="dropdown user user-menu">
@@ -188,11 +154,6 @@
                     </div>
                 </div>
             </section>
-            <div class="sidebar-footer">
-                <a href="javascript:void(0)" class="link" data-bs-toggle="tooltip" title="Settings"><span class="icon-Settings-2"></span></a>
-                <a href="mailbox.html" class="link" data-bs-toggle="tooltip" title="Email"><span class="icon-Mail"></span></a>
-                <a href="javascript:void(0)" class="link" data-bs-toggle="tooltip" title="Logout"><span class="icon-Lock-overturning"><span class="path1"></span><span class="path2"></span></span></a>
-            </div>
         </aside>
 
         <!-- Content Wrapper. Contains page content -->
@@ -233,8 +194,8 @@
         </div>
         <!-- /.content-wrapper -->
 
-        <footer class="main-footer">
-            &copy; <?= date('Y') ?> <a href="#"> Aisyah Coding || Group Project</a>. All Rights Reserved.
+        <footer class="main-footer text-center">
+           &copy; <?= date('Y') ?> <a href="https://www.instagram.com//nuraisyahaswari"> Aisyah</a> & <a href=https://www.instagram.com//yulandasucii>Yulanda</a> Coding || Group Project. All Rights Reserved.
         </footer>
 
     </div>
