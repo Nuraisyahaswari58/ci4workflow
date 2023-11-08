@@ -2,6 +2,7 @@
 
 <?= $this->section("content") ?>
 <!-- Main content -->
+<!-- Main content -->
 
 <section class="content">
   <div class="box">
@@ -244,12 +245,6 @@
       text: "<?= lang("App.remove-text") ?>",
       icon: 'warning',
       showCancelButton: true,
-      showClass: {
-        popup: 'animate_animated animate_fadeInDown'
-      },
-      hideClass: {
-        popup: 'animate_animated animate_fadeOutUp'
-      },
       confirmButtonColor: '#3085d6',
       cancelButtonColor: '#d33',
       confirmButtonText: '<?= lang("App.confirm") ?>',

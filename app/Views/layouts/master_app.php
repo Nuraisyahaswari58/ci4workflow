@@ -10,11 +10,11 @@
     <link rel="icon" href="https://eduadmin-template.multipurposethemes.com/bs5/images/favicon.ico">
     <title><?= $title; ?> | Schedule Project</title>
     <!-- Vendors Style-->
-    <link rel="stylesheet" href="assets/css/vendors_css.css">
+    <link rel="stylesheet" href="/assets/css/vendors_css.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
     <!-- Style-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/skin_color.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/skin_color.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
@@ -31,8 +31,8 @@
                 <a href="index-2.html" class="logo">
                     <!-- logo-->
                     <div class="logo-lg">
-                        <span class="light-logo"><img src="assets/images/logo-light-text.gif" style="margin-left: -15px;" alt="logo"></span>
-                        <span class="dark-logo"><img src="assets/images/logo-dark-text.gif" style="margin-left: -15px;" alt="logo"></span>
+                        <span class="light-logo"><img src="/assets/images/logo-light-text.gif" style="margin-left: -15px;" alt="logo"></span>
+                        <span class="dark-logo"><img src="/assets/images/logo-dark-text.gif" style="margin-left: -15px;" alt="logo"></span>
                     </div>
                 </a>
             </div>
@@ -208,13 +208,13 @@
 
     <!-- Vendor JS -->
     <?= $this->renderSection('script') ?>
-    <script src="assets/vendor_components/datatable/datatables.min.js"></script>
-    <script src="assets/js/vendors.min.js"></script>
+    <script src="/assets/vendor_components/datatable/datatables.min.js"></script>
+    <script src="/assets/js/vendors.min.js"></script>
     <!-- EduAdmin App -->
-    <script src="assets/js/template.js"></script>
-    <script src="assets/js/theme_change.js"></script>
-    <script src="assets/js/pages/validation.js"></script>
-    <script src="assets/js/pages/form-validation.js"></script>
+    <script src="/assets/js/template.js"></script>
+    <script src="/assets/js/theme_change.js"></script>
+    <script src="/assets/js/pages/validation.js"></script>
+    <script src="/assets/js/pages/form-validation.js"></script>
 </body>
 
 </html>
