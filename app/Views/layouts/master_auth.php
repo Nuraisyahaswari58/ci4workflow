@@ -31,13 +31,13 @@
 						<div class="bg-white rounded10 shadow-lg">
 							<div class="content-top-agile p-20 pb-0">
 								<img src="<?= base_url() ?>/assets/images/logo-light-text.gif" alt="logo" width="85%">
-								<?php 
+								<?php
 								$uri = service('uri');
 								?>
 								<?php if ($uri->getSegment(3) === "lupapassword") { ?>
 									<h4>Lupa Password</h4>
 									<p class="mb-0">Silahkan masukkan email anda.</p>
-								<?php } else if($uri->getSegment(3) === "resetPassword") { ?>
+								<?php } else if ($uri->getSegment(3) === "resetPassword") { ?>
 									<p class="mb-0">Silahkan reset kata sandi.</p>
 								<?php } else { ?>
 									<p class="mb-0">Masukkan Email/Username untuk Melanjutkan Login.</p>
@@ -47,18 +47,18 @@
 							<div class="p-40">
 								<?= $this->renderSection('content') ?>
 								<?php if ($uri->getSegment(3) === "lupapassword") { ?>
-								<?php } else if($uri->getSegment(3) === "resetPassword") { ?>
+								<?php } else if ($uri->getSegment(3) === "resetPassword") { ?>
 								<?php } else { ?>
-									
-								</div>
-								<?php } ?>
 
 							</div>
+						<?php } ?>
+
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 
 
@@ -66,18 +66,18 @@
 	<script src="<?= base_url() ?>/assets/js/vendors.min.js"></script>
 	<script src="<?= base_url() ?>/assets/js/pages/chat-popup.js"></script>
 	<script src="<?= base_url() ?>/assets/icons/feather-icons/feather.min.js"></script>
-<script>
-    const passwordInput = document.querySelector('input[name="password"]');
-    const togglePasswordButton = document.getElementById('togglePassword');
+	<script>
+		const passwordInput = document.querySelector('input[name="password"]');
+		const togglePasswordButton = document.getElementById('togglePassword');
 
-    togglePasswordButton.addEventListener('click', function () {
-        if (passwordInput.type === 'password') {
-            passwordInput.type = 'text';
-        } else {
-            passwordInput.type = 'password';
-        }
-    });
-</script>
+		togglePasswordButton.addEventListener('click', function() {
+			if (passwordInput.type === 'password') {
+				passwordInput.type = 'text';
+			} else {
+				passwordInput.type = 'password';
+			}
+		});
+	</script>
 </body>
 
 </html>
